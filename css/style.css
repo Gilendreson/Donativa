@@ -25,7 +25,9 @@ html, body {
 
 .row {
     margin: 0;
-    width: 100%
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
 }
 
 
@@ -154,10 +156,16 @@ span#submensagem {
     border:none;
     box-shadow: 6px 4px 6px #000;
     color: #000;
-  
- }
+    justify-content: center;
+    align-items: center;
+     
+}
 
- 
+.col{
+display: flex;
+align-items: center;
+justify-content: center;
+}
 
 .card #img-card{
     
@@ -176,18 +184,25 @@ span#submensagem {
     text-align: center;
     padding: 0;
     color: #b10a79; 
-
 }
 
-.swiper-container{ 
-    overflow-x: hidden;
+.carousel-control-prev{
+
+    margin-left: -4rem;
 }
 
-.swiper-button-next{
-display: inline-block;
+.carousel-control-next{
 
-
+    margin-right: -4rem;
 }
+
+.carousel-indicators{
+    margin-bottom: -30px;
+}
+
+
+
+
 
 /* scroll ajustes */
 ::-webkit-scrollbar {
