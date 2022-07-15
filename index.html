@@ -9,15 +9,15 @@
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     </head>
 
     <body>                 
-                           
+        <header>
             <nav id="header" class="navbar fixed-top navbar-expand-md">
-                <div class="container-fluid ms-auto"> 
+                <div class="container-fluid"> 
 
                     <a class="navbar-brand d-flex align-item-center" href="index.html">
                     <img class="logo" src="./img/logo-donativa.svg" alt="logo Donativa">
@@ -52,11 +52,12 @@
                     </div>
                 </div>
             </nav>
+        </header>                   
              
              
         <main id="main">
 
-            <section id="inicio" class="row mt-2 p-5">
+            <section id="inicio" class="row mt-3 p-5">
                 <div class="row m-0 p-0">
                     <div class="col-md-5  d-flex justify-content-center align-items-center flex-column">
                         <h2 id="mensagem">AJUDAR A EDUCAÇÃO NO BRASIL FAZ BEM A TODOS</h2>
@@ -79,10 +80,8 @@
                             <img class="img-fluid" src="./img/img-capa-1.jpg" alt="Imagem de capa">
                         </div>
                     </div>
-                    
-
                 </div>
-                <div class="faixa container-fluid">
+                <div class="faixa container-fluid mt-3 p-3">
                     <div class="social-links col-md-12 d-flex justify-content-center align-items-center">
                         <a target="_blank" href="https://youtube.com">
                             <i class="bi bi-youtube p-2"></i>
@@ -95,21 +94,208 @@
 
                         <a target="_blank" href="https://instagram.com">
                             <i class="bi bi-instagram p-2"></i>
-                            
+                        </a>                                                      
                     </div>
                 </div>
-                
+            </section>
+                                
 
+            <section id="categorias" class=" mt-1 p-2 card-text">
+                <div class="container pb-2 pt-2">
+                    <h3>Categorias de doação</h3>
+
+                    <div id="carouselCategorias" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselCategorias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselCategorias" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-bs-interval="10000">
+
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col justify-content-center">
+                                    <div class="card card-text p-2">
+                                        <figure>
+                                            <img src="img/moveis-card.jpg" alt="Moveis" id="img-card" >
+                                        </figure> 
+            
+                                        <div>                
+                                        <h5>Móveis para estudo</h5>
+                                        <p>Doar seus móveis usados ou novos é uma forma de dar conforto aos estudantes, muitas pessoas estudam no chão!</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-dark ">Clique para doar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col justify-content-center">
+                                    <div class="card card-text p-2">
+                                        <figure>
+                                            <img src="img/computador-card.jpg" alt="Computadores" id="img-card" >
+                                        </figure> 
+            
+                                        <div>                
+                                        <h5>Computadores</h5>
+                                        <p>Computadores são ferramentas de acesso ao conhecimento universal, por isso é um dos itens mais requisitados, doe o seu. </p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-dark ">Clique para doar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col justify-content-center">
+                                    <div class="card card-text p-2">
+                                        <figure>
+                                            <img src="img/livros-card.jpg" alt="Livros" id="img-card" >
+                                        </figure> 
+            
+                                        <div>                
+                                        <h5>Livros</h5>
+                                        <p>Já precisou entender um assunto que nem com ajuda da internet você consegue? pois é! os livros tem esse poder.</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-dark ">Clique para doar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="col justify-content-center">
+                                    <div class="card card-text p-2">
+                                        <figure>
+                                            <img src="img/perifericos-card.jpg" alt="Perifericos" id="img-card" >
+                                        </figure> 
+            
+                                        <div>                
+                                        <h5>Periféricos</h5>
+                                        <p>Coisas simples para alguns, para outros são a chave para o futuro; mouses, teclados, webcans e fones estão na lista de mais requisitados</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-dark ">Clique para doar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col justify-content-center">
+                                    <div class="card card-text p-2">
+                                        <figure>
+                                            <img src="img/perifericos-card.jpg" alt="Perifericos" id="img-card" >
+                                        </figure> 
+            
+                                        <div>                
+                                        <h5>Periféricos</h5>
+                                        <p>Coisas simples para alguns, para outros são a chave para o futuro; mouses, teclados, webcans e fones estão na lista de mais requisitados</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-dark ">Clique para doar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col justify-content-center">
+                                    <div class="card card-text p-2">
+                                        <figure>
+                                            <img src="img/perifericos-card.jpg" alt="Perifericos" id="img-card" >
+                                        </figure> 
+            
+                                        <div>                
+                                        <h5>Periféricos</h5>
+                                        <p>Coisas simples para alguns, para outros são a chave para o futuro; mouses, teclados, webcans e fones estão na lista de mais requisitados</p>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-dark ">Clique para doar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategorias" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCategorias" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
+
+                </div>
+
+
+                 
+<!--
+             
+                <div class="swiper-container mySwiper my-5 py-5" id="swiper-button-next"   id="swiper-button-prev">                                               
+                    <div class="swiper-wrapper">
+                        <div class="d-flex justify-content-center">
+                            <div class="card card-text p-2">
+                                <figure>
+                                    <img src="img/Img-Moveis.jpg" alt="Moveis" id="img-card" >
+                                </figure> 
+    
+                                <div>                
+                                <h5>Móveis para estudo</h5>
+                                <p>Doar seus móveis usados ou novos é uma forma de dar conforto aos estudantes, muitas pessoas estudam no chão</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="card card-text p-2">
+                                <figure>
+                                    <img src="img/Img-Moveis.jpg" alt="Moveis" id="img-card" >
+                                </figure> 
+    
+                                <div>                
+                                <h5>Móveis para estudo</h5>
+                                <p>Doar seus móveis usados ou novos é uma forma de dar conforto aos estudantes, muitas pessoas estudam no chão</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="card card-text p-2">
+                                <figure>
+                                    <img src="img/Img-Moveis.jpg" alt="Moveis" id="img-card" >
+                                </figure> 
+    
+                                <div>                
+                                <h5>Móveis para estudo</h5>
+                                <p>Doar seus móveis usados ou novos é uma forma de dar conforto aos estudantes, muitas pessoas estudam no chão</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="swiper-slide d-flex justify-content-center">
+                            <div class="card card-text p-2">
+                                <figure>
+                                    <img src="img/Img-Moveis.jpg" alt="Moveis" id="img-card" >
+                                </figure> 
+    
+                                <div>                
+                                <h5>Móveis para estudo</h5>
+                                <p>Doar seus móveis usados ou novos é uma forma de dar conforto aos estudantes, muitas pessoas estudam no chão</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                    */
+                    
+                </div>
+            
+                   
             </section>
 
-
-
-
-
-
-
-
-
+-->
 
 
         </main>
@@ -122,5 +308,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <!-- swiper-bundle -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>

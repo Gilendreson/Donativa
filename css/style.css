@@ -1,7 +1,7 @@
 /* Estilos gerais*/
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-html, body{
+html, body {
     font-family: "Roboto", arial, lucida;
     width: 100%;
     height: 100%;
@@ -16,7 +16,7 @@ html, body{
     width: 100%;
     margin: 0; 
 } 
-/*
+
 #header{
 
     
@@ -34,15 +34,9 @@ html, body{
     height: 100%;    
 } 
 
-/*
+
 
 /* estilos nav bar*/
-
-.container {
-    background: #fff;
-    margin: 0;
-    padding: 0;
-}
 
 .logo {
 position: fixed;
@@ -86,9 +80,6 @@ left: 0;
     width: 100%;
 }
 
-
-
-
 /* estilos section*/
 
 #main{
@@ -104,19 +95,21 @@ section#inicio {
 h2#mensagem {
     height: auto;
     text-align: center;
+    text-decoration: none;
 }
 
 span#submensagem {
 
     color: #b10a79;
     text-align: center;
+    text-decoration: none;
 }
 
 .faixa {
     background-image: url("../img/background-faixa.jpg");
     position: right;
     margin: 0 auto;
-    height: 40px;
+    height: 75px;
 }
 
 .faixa i{
@@ -147,18 +140,54 @@ span#submensagem {
     
 }
 
-.social-links a:hover{
-
-
-}
-
 
 .img-fluid{
-
     width: 100%;
     height: auto;
 }
 
+/* Estilos de Cards  */
+
+.card{
+    width: 18rem;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 6px 4px 6px #000;
+    color: #000;
+  
+ }
+
+ 
+
+.card #img-card{
+    
+    border-radius:10px 10px 0 0;
+    width:100%;
+    
+}
+
+.card-text {
+    text-align: center;
+    padding: 0;   
+
+}
+
+.card-text h3, h5{
+    text-align: center;
+    padding: 0;
+    color: #b10a79; 
+
+}
+
+.swiper-container{ 
+    overflow-x: hidden;
+}
+
+.swiper-button-next{
+display: inline-block;
+
+
+}
 
 /* scroll ajustes */
 ::-webkit-scrollbar {
@@ -166,7 +195,7 @@ span#submensagem {
     }
   
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 0.3rem grey; 
+    box-shadow: inset 0 0 0.3rem #444; 
     width: 12px;
     }
    
