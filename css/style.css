@@ -165,6 +165,7 @@ span#submensagem {
 display: flex;
 align-items: center;
 justify-content: center;
+padding-bottom: 2rem;
 }
 
 .card #img-card{
@@ -183,7 +184,8 @@ justify-content: center;
 .card-text h3, h5{
     text-align: center;
     padding: 0;
-    color: #b10a79; 
+    color: #b10a79;
+    margin-bottom: 2px; 
 }
 
 .carousel-control-prev{
@@ -197,10 +199,14 @@ justify-content: center;
 }
 
 .carousel-indicators{
-    margin-bottom: -30px;
+    margin-bottom: -15px;
 }
 
-
+h3, h2, h5{
+    text-align: center;
+    padding: 0;
+    color: #b10a79; 
+}
 
 
 
