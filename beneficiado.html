@@ -56,6 +56,86 @@
 
         <main id="main">
 
+            <Section id="cadastroBeneficiado">
+                <div class="form mb-3">
+                    <form method="post" action="index.php">                     
+                        
+                        <h3 class="mt-3">Cadastro de Beneficiados</h3>
+                        <label for="Nome">Razão social ou nome completo</label>
+                        <input type="text" size="40" placeholder="Razão social ou nome completo"><br><br>
+                        <label for="cnpj">CNPJ:</label>
+                        <input type="text" placeholder="XX.XXX.XXX/0001-XX."><br><br>
+                        <label for="email">Email:</label>
+                        <input type="text" size="40" placeholder="Email valido">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" placeholder="XX.XXX.XXX-X"><br>
+                        <label for="sexo">Sexo:</label> &nbsp;
+                        <label for="mas">Masculino</label>
+                        <input type="radio" name="opcao" id="op1">
+                        <label for="fem">Feminino</label>
+                        <input type="radio" name="opcao" id="op1">
+                        <label for="outro">Outros</label>
+                        <input type="radio" name="opcao" id="op1">
+
+                        <h3 class="mt-3">Endereço</h3>
+                        <label for="uf">Estado:</label>
+                        <select name="estado" id="uf">
+                            <option value="0">Escolha sua região</option>
+                            <optgroup label="Norte">
+                                <option value="1">Acre</option>
+                                <option value="2">Amazonas</option>
+                                <option value="3">Amapá</option>
+                                <option value="4">Pará</option>
+                                <option value="5">Rondonia</option>
+                                <option value="6">Roraima</option>
+                                <option value="7">Tocantins</option>
+                            </optgroup>
+                            <optgroup label="Nordeste">
+                                <option value="8">Alagoas</option>
+                                <option value="9">Bahia</option>
+                                <option value="10">Ceara</option>
+                                <option value="11">Maranhão</option>
+                                <option value="12">Piaui</option>
+                                <option value="13">Pernambuco</option>
+                                <option value="14">Paraiba</option>
+                                <option value="15">Rio Grande do Norte</option>
+                                <option value="16">Sergipe</option>
+                            </optgroup>
+                            <optgroup label="Centro-Oeste"></optgroup>
+                            <option value="17">Goias</option>
+                            <option value="18">Mato Grosso</option>
+                            <option value="19">Mato Grosso do Sul</option>
+                            <option value="20">Distrito Federal</option>
+                            <optgroup label="Sudeste">
+                                <option value="21">Espirito Santo</option>
+                                <option value="22">Minas Gerais</option>
+                                <option value="23">Rio de Janeiro</option>
+                                <option value="24">São Paulo</option>
+                            </optgroup>
+                            <optgroup label="Sul">
+                                <option value="25">Paraná</option>
+                                <option value="26">Rio Grande do Sul</option>
+                                <option value="27">Santa Catarina</option>
+                            </optgroup>
+                        </select>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" placeholder="Cidade"><br><br>
+                        <label for="cep">CEP:</label>
+                        <input type="text" placeholder="XXXXX-XXX">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" placeholder="Bairro"><br><br>
+                        <label for="rua">Rua</label>
+                        <input type="text" size="30" placeholder="Logadouro">
+                        <label for="nu">Numero:</label>
+                        <input type="text" size="5" placeholder="xx"><br><br>
+                        <label for="comp">Complemento:</label>
+                        <input type="text" size="30" placeholder="Andar, Apartamento, Bloco"><br><br>
+                        <input type="submit" value="Enviar"> &nbsp; &nbsp;
+                        <a href="./login.html" class="form-link">Voltar</a>
+                    </form>
+                </div>
+            </Section>
+
 
 
 
