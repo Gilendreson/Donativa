@@ -255,7 +255,13 @@ main#login a {
     display: flex;
 }
 
-.form {
+.form-login{
+
+    background: #fff;
+
+}
+
+.form{
     height: 100%;
     width: 50%;
     display: flex;
@@ -430,16 +436,31 @@ section#cadastroBeneficiado{
     
 }
 
-.form {
-    background: #e4e4e4;
+.form#cadastro {
+    
     margin: 0 auto;
+    padding: 50px;
     border: none;
     margin-top: 500;
-    
+    display: block;
     position:relative;
-    width: 700px;
-    height: auto;    
+    width: 750px;
+    height: auto; 
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+    transition: 1s;
 }
+
+@media (max-width:768px) {
+    .form#cadastro {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    
+}
+
+
 
 
 
