@@ -48,7 +48,7 @@ html, body {
 position: fixed;
 transition: all ease-in-out 1s;
 padding: 10px 15px;
-width: auto;
+height: 50px;
 z-index: 9997;
 top: 0;
 left: 0;
